@@ -14,3 +14,8 @@ jobs:
           echo "GitHub Action"
           pwd
           ls -al
+
+      - name: 02-th Step - GitHub-환경변수
+        run: |
+          echo $GITHUB_SHA
+          echo  $GITHUB_REPOSITORY
