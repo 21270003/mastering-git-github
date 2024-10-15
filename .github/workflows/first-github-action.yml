@@ -8,8 +8,9 @@ jobs:
   My-Deploy-Job:
     runs-on: ubuntu-latest
     steps:
-      - name: 01-th Step
-        run: echo "Hello World"
-
-      - name: 02-th Step
-        run: echo "GitHub World"    
+      - name: 01-th Step - Linux 명령어
+        run: |
+          echo "Hello World" 
+          echo "GitHub Action"
+          pwd
+          ls -al
